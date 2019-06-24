@@ -13,8 +13,12 @@ namespace Index.txt.Models
         public DateTime CreationDate { get; set; }
         [Required] public string Description;
         
-        public List<TodoItemProjectRelationship> TodoItemProjectRelationships;
-        public List<TodoItemContextRelationship> TodoItemContextRelationships;
-        public List<TodoItemKeyValueRelationship> TodoItemKeyValueRelationships;
+        public IList<TodoItemProjects> TodoItemProjects { get; set; }
+        public IList<TodoItemContexts> TodoItemContexts { get; set; }
+        public IList<TodoItemKeyValues> TodoItemKeyValues { get; set; }
+        
+        //public List<TodoItemProjects> TodoItemProjectRelationships;
+        //public List<TodoItemContexts> TodoItemContextRelationships;
+        //public List<TodoItemKeyValues> TodoItemKeyValueRelationships;
     }
 }

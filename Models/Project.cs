@@ -7,6 +7,6 @@ namespace Index.txt.Models
         public int Id { get; set; }
         public string Tag { get; set; }
         
-        public List<TodoItemProjectRelationship> TodoItemProjectRelationships;
+        public IList<TodoItemProjects> TodoItemProjects { get; set; }
     }
 }
