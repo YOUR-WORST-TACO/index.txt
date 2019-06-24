@@ -13,9 +13,9 @@ namespace Index.txt.Models
         public DateTime CreationDate { get; set; }
         [Required] public string Description;
         
-        public IList<TodoItemProjects> TodoItemProjects { get; set; }
-        public IList<TodoItemContexts> TodoItemContexts { get; set; }
-        public IList<TodoItemKeyValues> TodoItemKeyValues { get; set; }
+        public IList<TodoItemProject> TodoItemProjects { get; set; }
+        public IList<TodoItemContext> TodoItemContexts { get; set; }
+        public IList<TodoItemKeyValue> TodoItemKeyValues { get; set; }
         
         //public List<TodoItemProjects> TodoItemProjectRelationships;
         //public List<TodoItemContexts> TodoItemContextRelationships;

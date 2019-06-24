@@ -8,6 +8,6 @@ namespace Index.txt.Models
         public string Key { get; set; }
         public string Value { get; set; }
         
-        public IList<TodoItemKeyValues> TodoItemKeyValues { get; set; }
+        public IList<TodoItemKeyValue> TodoItemKeyValues { get; set; }
     }
 }

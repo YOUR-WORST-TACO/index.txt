@@ -1,13 +1,13 @@
 namespace Index.txt.Models
 {
-    public class TodoItemProjects
+    public class TodoItemKeyValue
     {
         public int Id { get; set; }
         
         public int TodoItemId { get; set; }
         public TodoItem TodoItem { get; set; }
         
-        public int ProjectId { get; set; }
-        public Project Project { get; set; }
+        public int KeyValueId { get; set; }
+        public KeyValue KeyValue { get; set; }
     }
 }
