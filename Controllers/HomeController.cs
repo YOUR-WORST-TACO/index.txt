@@ -10,8 +10,18 @@ namespace Index.txt.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly TodoModelDbContext _context;
+
+        public HomeController(TodoModelDbContext context)
+        {
+            _context = context;
+            
+            var contexts = new[]
+                
+        }
         public IActionResult Index()
         {
+            
             return View();
         }
 
