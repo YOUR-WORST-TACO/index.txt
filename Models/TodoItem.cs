@@ -11,7 +11,8 @@ namespace Index.txt.Models
         public char Priority { get; set; }
         public DateTime CompletionDate { get; set; }
         public DateTime CreationDate { get; set; }
-        [Required] public string Description;
+        [Required]
+        public string Description { get; set; }
         
         public IList<TodoItemProject> TodoItemProjects { get; set; }
         public IList<TodoItemContext> TodoItemContexts { get; set; }
