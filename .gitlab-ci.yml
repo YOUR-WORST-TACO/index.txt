@@ -1,9 +1,0 @@
-stages:
-  - run
-
-run:
-  stage: run
-  tags:
-    - shell
-  script:
-    - 
