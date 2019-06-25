@@ -20,4 +20,8 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4" PrivateAssets="All" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\css" />
+    </ItemGroup>
+
 </Project>

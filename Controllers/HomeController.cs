@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Index.txt.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Index.txt.Controllers
 {
@@ -14,7 +15,7 @@ namespace Index.txt.Controllers
         {
             return View();
         }
-
+        
         public IActionResult Privacy()
         {
             return View();

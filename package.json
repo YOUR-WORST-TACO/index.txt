@@ -1,0 +1,25 @@
+{
+  "name": "index.txt",
+  "version": "1.0.0",
+  "description": "A web based todo.txt list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR-WORST-TACO/index.txt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YOUR-WORST-TACO/index.txt/issues"
+  },
+  "homepage": "https://github.com/YOUR-WORST-TACO/index.txt#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-cli": "^1.3.2",
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.12.0"
+  }
+}
