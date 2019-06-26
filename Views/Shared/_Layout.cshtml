@@ -15,6 +15,8 @@
               crossorigin="anonymous"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
     </environment>
+
+    <link rel="stylesheet" href="~/lib/codemirror/dist/codemirror.css"/>
     <link rel="stylesheet" href="~/css/main.css" />
 </head>
 <body>
@@ -67,7 +69,18 @@
         </script>
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/codemirror/dist/codemirror.min.js"></script>
+    <script src="~/lib/codemirror/mode/python/python.js"></script>
 
-    @RenderSection("Scripts", required: false)
+<script>
+
+var myTextArea = document.getElementById("coder");
+
+var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
+
+
+</script>
+
+@RenderSection("Scripts", required: false)
 </body>
 </html>
