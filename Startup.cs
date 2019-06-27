@@ -42,6 +42,12 @@ namespace Index.txt
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<TodoModelDbContext>();
 
+            services.AddAuthentication().AddMicrosoftAccount(microsoftOptions =>
+                {
+                    microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
+                    microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
+                });
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
