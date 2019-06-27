@@ -3,7 +3,17 @@
 }
 
 <div class="editor-container">
-<textarea id="coder">
+    <textarea id="coder">
 
 </textarea>
 </div>
+
+@section Scripts
+{
+    <script>
+    
+    var myTextArea = document.getElementById("coder");
+    var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
+    
+    </script>
+}

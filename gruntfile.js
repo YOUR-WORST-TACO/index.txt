@@ -3,8 +3,6 @@ module.exports = function (grunt) {
 
     var sass = require('node-sass');
     
-    
-    
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
